@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LastLaffs</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <main>
+        <div>
+        <h1>LastLaffs</h1>
+        <t>just testing</t>
+        </div>
+        <br>
+        <button class="confetti-btn" onclick="popConfetti()">Click for a suprise!</button>
+    </main>
+    <script src="index.js"></script>
+  </body>
+  <script>
+    function popConfetti() {
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: 0.1 , y: 0.2 }
+      });
+    }
+  </script>
+</html>

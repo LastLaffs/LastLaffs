@@ -1,0 +1,29 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: light-dark(#000, #eee);
+  background-color: light-dark(#fff, #000);
+}
+.confetti-btn {
+    background-color: #6366f1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+  }
+
+  .confetti-btn:hover {
+    background-color: #4f46e5;
+  }
+
+  .confetti-btn:active {
+    transform: scale(0.95);
+  }
